@@ -1,0 +1,10 @@
+<div class="movie-details-container row align-items-center" *ngIf="movieDetails">
+    <div class="col-6">
+        <img [src]="posterImageBaseUrl + movieDetails.poster_path" alt="">
+    </div>
+    <div class="col-6">
+        <h2>{{movieDetails.title}}</h2>
+        <button class="back-btn focusable" tabindex="-1" (click)="back()">back</button>
+
+    </div>
+</div>

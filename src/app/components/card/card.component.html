@@ -1,0 +1,8 @@
+<button class="card-container focusable" tabindex="-1" (click)="goToDetails()">
+    <div class="col-auto">
+        <img class="poster-image" [src]="posterImageBaseUrl + movieInfo.poster_path" alt="">
+    </div>
+    <div class="col-12">
+        <h3>{{movieInfo.title}}</h3>
+    </div>
+</button>

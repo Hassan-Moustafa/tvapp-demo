@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/data.service';
+
+declare var SpatialNavigation: any;
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tvapp';
+
+  constructor() {
+  }
+
+  ngOnInit() {
+    SpatialNavigation.init();
+
+    SpatialNavigation.add({
+      selector: '.focusable'
+    });
+
+    SpatialNavigation.makeFocusable();
+  }
 }

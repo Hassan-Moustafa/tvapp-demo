@@ -1,0 +1,9 @@
+.back-btn {
+    width: 100px;
+    background-color: green;
+    color: white;
+
+    &:focus {
+        outline: 2px solid red;
+    }
+}

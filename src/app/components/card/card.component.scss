@@ -1,0 +1,14 @@
+.card-container {
+    width: 12vw;
+    min-height: 300px;
+    background-color: gray;
+
+    .poster-image {
+        width: 100%;
+        height: 70%;
+    }
+
+    &:focus {
+        outline: 2px solid red;
+    }
+}
